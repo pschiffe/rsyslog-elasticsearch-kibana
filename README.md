@@ -2,7 +2,7 @@
 
 [Docker](https://www.docker.com/) container for centralized logging based on [CentOS 7](http://www.centos.org/) with [rsyslog](http://www.rsyslog.com/), [elasticsearch](https://www.elastic.co/products/elasticsearch) and [kibana](https://www.elastic.co/products/kibana).
 
-To get this image, simply pull it from [docker hub](https://registry.hub.docker.com/u/pschiffe/rsyslog-elasticsearch-kibana/):
+To get this image, pull it from [docker hub](https://registry.hub.docker.com/u/pschiffe/rsyslog-elasticsearch-kibana/):
 
 ```
 # docker pull pschiffe/rsyslog-elasticsearch-kibana
