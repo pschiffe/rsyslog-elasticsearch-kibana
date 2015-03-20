@@ -11,6 +11,7 @@ RUN yum -y upgrade \
         tar \
         supervisor \
         rsyslog \
+        rsyslog-mmnormalize \
         rsyslog-elasticsearch \
         java-1.7.0-openjdk-headless \
         elasticsearch \
