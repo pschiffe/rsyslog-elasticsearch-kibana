@@ -27,8 +27,8 @@ COPY supervisor/elasticsearch.ini /etc/supervisord.d/elasticsearch.ini
 COPY supervisor/kibana.ini /etc/supervisord.d/kibana.ini
 
 COPY rsyslog/rsyslog.conf /etc/rsyslog.conf
-COPY rsyslog/elasticsearch.conf /etc/rsyslog.d/elasticsearch.conf
-COPY rsyslog/normalize.conf /etc/rsyslog.d/normalize.conf
+COPY rsyslog/00_normalize.conf /etc/rsyslog.d/00_normalize.conf
+COPY rsyslog/10_elasticsearch.conf /etc/rsyslog.d/10_elasticsearch.conf
 COPY rsyslog/rules.rb /etc/rsyslog.d/rules.rb
 
 COPY elasticsearch/logging.yml /etc/elasticsearch/logging.yml
