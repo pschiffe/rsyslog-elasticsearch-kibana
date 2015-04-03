@@ -17,7 +17,7 @@ $ docker build -t <username>/rsyslog-elasticsearch-kibana .
 To run the image use:
 
 ```
-$ docker run -d -p 514:514 -p 514:514/udp -p 5601:5601 pschiffe/rsyslog-elasticsearch-kibana
+$ docker run -d -p 514:514 -p 514:514/udp -p 5601:5601 -v /etc/localtime:/etc/localtime:ro pschiffe/rsyslog-elasticsearch-kibana
 ```
 
 Rsyslog listens on standard port 514 (both TCP and UDP) and kibana on TCP port 5601. To forward log messages from your system, configure rsyslog according to this [recipe](http://www.rsyslog.com/sending-messages-to-a-remote-syslog-server/) with appropriate address of running container. To test the running container from the host system you can use:
