@@ -26,6 +26,10 @@
         "originalmsg":{
           "type":"string",
           "index":"no"
+        },
+        "status":{
+          "type":"string",
+          "index":"not_analyzed"
         }
       }
     }
