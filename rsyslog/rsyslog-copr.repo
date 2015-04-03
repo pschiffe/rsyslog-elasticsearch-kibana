@@ -1,0 +1,24 @@
+[jhrozek-rsyslog]
+name=Copr repo for rsyslog owned by jhrozek
+baseurl=https://copr-be.cloud.fedoraproject.org/results/jhrozek/rsyslog/epel-7-$basearch/
+skip_if_unavailable=True
+gpgcheck=1
+gpgkey=https://copr-be.cloud.fedoraproject.org/results/jhrozek/rsyslog/pubkey.gpg
+enabled=1
+
+[jhrozek-liblognorm]
+name=Copr repo for liblognorm owned by jhrozek
+baseurl=https://copr-be.cloud.fedoraproject.org/results/jhrozek/liblognorm/epel-7-$basearch/
+skip_if_unavailable=True
+gpgcheck=1
+gpgkey=https://copr-be.cloud.fedoraproject.org/results/jhrozek/liblognorm/pubkey.gpg
+enabled=1
+
+[jhrozek-liblogging]
+name=Copr repo for liblogging owned by jhrozek
+baseurl=https://copr-be.cloud.fedoraproject.org/results/jhrozek/liblogging/epel-7-$basearch/
+skip_if_unavailable=True
+gpgcheck=1
+gpgkey=https://copr-be.cloud.fedoraproject.org/results/jhrozek/liblogging/pubkey.gpg
+enabled=1
+

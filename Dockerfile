@@ -1,6 +1,7 @@
 FROM centos:7
 MAINTAINER "Peter Schiffer" <pschiffe@redhat.com>
 
+COPY rsyslog/rsyslog-copr.repo /etc/yum.repos.d/rsyslog-copr.repo
 COPY elasticsearch/elasticsearch.repo /etc/yum.repos.d/elasticsearch.repo
 
 RUN rpm --import https://packages.elasticsearch.org/GPG-KEY-elasticsearch
@@ -13,7 +14,7 @@ RUN yum -y upgrade \
         rsyslog \
         rsyslog-mmnormalize \
         rsyslog-elasticsearch \
-        java-1.7.0-openjdk-headless \
+        java-1.8.0-openjdk-headless \
         elasticsearch \
     && yum -y clean all
 
