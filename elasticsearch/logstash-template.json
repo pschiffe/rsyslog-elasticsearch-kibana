@@ -30,6 +30,18 @@
         "status":{
           "type":"string",
           "index":"not_analyzed"
+        },
+        "principal":{
+          "type":"string",
+          "index":"not_analyzed"
+        },
+        "action":{
+          "type":"string",
+          "index":"not_analyzed"
+        },
+        "parameters":{
+          "type":"string",
+          "index":"not_analyzed"
         }
       }
     }
