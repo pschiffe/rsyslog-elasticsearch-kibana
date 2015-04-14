@@ -16,7 +16,7 @@ RUN yum -y upgrade \
         rsyslog-elasticsearch \
         java-1.8.0-openjdk-headless \
         elasticsearch \
-    && yum -y clean all
+    && yum -y clean all # Tue Apr 14 10:23:13 UTC 2015
 
 RUN mkdir -p /opt/kibana \
     && curl -sSL https://download.elasticsearch.org/kibana/kibana/kibana-4.0.2-linux-x64.tar.gz \
@@ -35,12 +35,18 @@ RUN chmod u+x /root/.firstrun/firstrun.sh
 COPY rsyslog/rsyslog.conf /etc/rsyslog.conf
 COPY rsyslog/00_normalize.conf /etc/rsyslog.d/00_normalize.conf
 COPY rsyslog/10_elasticsearch.conf /etc/rsyslog.d/10_elasticsearch.conf
-COPY rsyslog/rules.rb /etc/rsyslog.d/rules.rb
+COPY rsyslog/rules-audit.rb /etc/rsyslog.d/rules-audit.rb
+COPY rsyslog/rules-httpderror.rb /etc/rsyslog.d/rules-httpderror.rb
+COPY rsyslog/rules-krb5-kdc.rb /etc/rsyslog.d/rules-krb5-kdc.rb
+COPY rsyslog/rules-ipa-389-access.rb /etc/rsyslog.d/rules-ipa-389-access.rb
 
 COPY elasticsearch/logging.yml /etc/elasticsearch/logging.yml
 COPY elasticsearch/logstash-template.json /etc/elasticsearch/templates/logstash.json
 
-COPY kibana/config.json /root/.firstrun/kibana-config.json
+COPY kibana/config-base.json /root/.firstrun/kibana-config-base.json
+COPY kibana/config-searches.json /root/.firstrun/kibana-config-searches.json
+COPY kibana/config-visualizations.json /root/.firstrun/kibana-config-visualizations.json
+COPY kibana/config-dashboards.json /root/.firstrun/kibana-config-dashboards.json
 
 COPY kibana/kibana.sh /opt/kibana/bin/kibana.sh
 RUN chmod +x /opt/kibana/bin/kibana.sh
