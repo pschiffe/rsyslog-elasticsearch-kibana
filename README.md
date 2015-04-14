@@ -1,6 +1,6 @@
 # rsyslog-elasticsearch-kibana
 
-[Docker](https://www.docker.com/) container for centralized logging based on [CentOS 7](http://www.centos.org/) with [rsyslog](http://www.rsyslog.com/), [elasticsearch](https://www.elastic.co/products/elasticsearch) and [kibana](https://www.elastic.co/products/kibana).
+[Docker](https://www.docker.com/) container for centralized logging based on [CentOS 7](http://www.centos.org/) with [rsyslog](http://www.rsyslog.com/), [elasticsearch](https://www.elastic.co/products/elasticsearch) and [kibana](https://www.elastic.co/products/kibana). Contains partial configuration for [freeIPA](http://www.freeipa.org/page/Main_Page) server, but this is still work in progress.
 
 To get this image, pull it from [docker hub](https://registry.hub.docker.com/u/pschiffe/rsyslog-elasticsearch-kibana/):
 
