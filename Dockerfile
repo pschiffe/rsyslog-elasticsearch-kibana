@@ -16,7 +16,7 @@ RUN yum -y upgrade \
         rsyslog-elasticsearch \
         java-1.8.0-openjdk-headless \
         elasticsearch \
-    && yum -y clean all # Tue Apr 14 10:23:13 UTC 2015
+    && yum -y clean all # Wed Apr 15 11:22:40 UTC 2015
 
 RUN mkdir -p /opt/kibana \
     && curl -sSL https://download.elasticsearch.org/kibana/kibana/kibana-4.0.2-linux-x64.tar.gz \
@@ -39,6 +39,9 @@ COPY rsyslog/rules-audit.rb /etc/rsyslog.d/rules-audit.rb
 COPY rsyslog/rules-httpderror.rb /etc/rsyslog.d/rules-httpderror.rb
 COPY rsyslog/rules-krb5-kdc.rb /etc/rsyslog.d/rules-krb5-kdc.rb
 COPY rsyslog/rules-ipa-389-access.rb /etc/rsyslog.d/rules-ipa-389-access.rb
+COPY rsyslog/rules-ipa-389-errors.rb /etc/rsyslog.d/rules-ipa-389-errors.rb
+COPY rsyslog/rules-sssd.rb /etc/rsyslog.d/rules-sssd.rb
+COPY rsyslog/rules-authpriv.rb /etc/rsyslog.d/rules-authpriv.rb
 
 COPY elasticsearch/logging.yml /etc/elasticsearch/logging.yml
 COPY elasticsearch/logstash-template.json /etc/elasticsearch/templates/logstash.json
