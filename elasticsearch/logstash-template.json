@@ -46,6 +46,34 @@
         "uid":{
           "type":"integer",
           "index":"not_analyzed"
+        },
+        "log-level":{
+          "type":"integer",
+          "index":"not_analyzed"
+        },
+        "status-code":{
+          "type":"integer",
+          "index":"not_analyzed"
+        },
+        "status-text":{
+          "type":"string",
+          "index":"not_analyzed"
+        },
+        "status_code":{
+          "type":"integer",
+          "index":"not_analyzed"
+        },
+        "status_text":{
+          "type":"string",
+          "index":"not_analyzed"
+        },
+        "service":{
+          "type":"string",
+          "index":"not_analyzed"
+        },
+        "username":{
+          "type":"string",
+          "index":"not_analyzed"
         }
       }
     }
