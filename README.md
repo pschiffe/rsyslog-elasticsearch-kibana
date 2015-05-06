@@ -4,11 +4,11 @@
 
 Image contains several pre-configured dashboards for [freeIPA](http://www.freeipa.org/page/Main_Page) server (User Logins, IPA Server Administration, IPA Server Health, IPA Server Utilization, SSSD):
 
-<img src="/doc/images/user-logins.png?raw=true" alt="User Logins" height="110" />
-<img src="/doc/images/ipa-server-administration.png?raw=true" alt="IPA Server Administration" height="110" />
-<img src="/doc/images/ipa-server-health.png?raw=true" alt="IPA Server Health" height="110" />
-<img src="/doc/images/ipa-server-utilization.png?raw=true" alt="IPA Server Utilization" height="110" />
-<img src="/doc/images/sssd.png?raw=true" alt="SSSD" height="110" />
+<img src="https://raw.githubusercontent.com/pschiffe/rsyslog-elasticsearch-kibana/master/doc/images/user-logins.png" alt="User Logins" height="110" />
+<img src="https://raw.githubusercontent.com/pschiffe/rsyslog-elasticsearch-kibana/master/doc/images/ipa-server-administration.png" alt="IPA Server Administration" height="110" />
+<img src="https://raw.githubusercontent.com/pschiffe/rsyslog-elasticsearch-kibana/master/doc/images/ipa-server-health.png" alt="IPA Server Health" height="110" />
+<img src="https://raw.githubusercontent.com/pschiffe/rsyslog-elasticsearch-kibana/master/doc/images/ipa-server-utilization.png" alt="IPA Server Utilization" height="110" />
+<img src="https://raw.githubusercontent.com/pschiffe/rsyslog-elasticsearch-kibana/master/doc/images/sssd.png" alt="SSSD" height="110" />
 
 To get this image, pull it from [docker hub](https://registry.hub.docker.com/u/pschiffe/rsyslog-elasticsearch-kibana/):
 
