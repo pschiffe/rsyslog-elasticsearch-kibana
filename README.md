@@ -1,6 +1,14 @@
 # rsyslog-elasticsearch-kibana
 
-[Docker](https://www.docker.com/) container for centralized logging based on [CentOS 7](http://www.centos.org/) with [rsyslog](http://www.rsyslog.com/), [elasticsearch](https://www.elastic.co/products/elasticsearch) and [kibana](https://www.elastic.co/products/kibana). Contains partial configuration for [freeIPA](http://www.freeipa.org/page/Main_Page) server, but this is still work in progress.
+[Docker](https://www.docker.com/) image for centralized logging based on [CentOS 7](http://www.centos.org/) with [rsyslog](http://www.rsyslog.com/), [elasticsearch](https://www.elastic.co/products/elasticsearch) and [kibana](https://www.elastic.co/products/kibana).
+
+Image contains several pre-configured dashboards for [freeIPA](http://www.freeipa.org/page/Main_Page) server (User Logins, IPA Server Administration, IPA Server Health, IPA Server Utilization, SSSD):
+
+<img src="/doc/images/user-logins.png?raw=true" alt="User Logins" height="125" />
+<img src="/doc/images/ipa-server-administration.png?raw=true" alt="IPA Server Administration" height="125" />
+<img src="/doc/images/ipa-server-health.png?raw=true" alt="IPA Server Health" height="125" />
+<img src="/doc/images/ipa-server-utilization.png?raw=true" alt="IPA Server Utilization" height="125" />
+<img src="/doc/images/sssd.png?raw=true" alt="SSSD" height="125" />
 
 To get this image, pull it from [docker hub](https://registry.hub.docker.com/u/pschiffe/rsyslog-elasticsearch-kibana/):
 
