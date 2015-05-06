@@ -2,13 +2,7 @@
 
 [Docker](https://www.docker.com/) image for centralized logging based on [CentOS 7](http://www.centos.org/) with [rsyslog](http://www.rsyslog.com/), [elasticsearch](https://www.elastic.co/products/elasticsearch) and [kibana](https://www.elastic.co/products/kibana).
 
-Image contains several pre-configured dashboards for [freeIPA](http://www.freeipa.org/page/Main_Page) server (User Logins, IPA Server Administration, IPA Server Health, IPA Server Utilization, SSSD):
-
-<img src="https://raw.githubusercontent.com/pschiffe/rsyslog-elasticsearch-kibana/master/doc/images/user-logins.png" alt="User Logins" height="110" />
-<img src="https://raw.githubusercontent.com/pschiffe/rsyslog-elasticsearch-kibana/master/doc/images/ipa-server-administration.png" alt="IPA Server Administration" height="110" />
-<img src="https://raw.githubusercontent.com/pschiffe/rsyslog-elasticsearch-kibana/master/doc/images/ipa-server-health.png" alt="IPA Server Health" height="110" />
-<img src="https://raw.githubusercontent.com/pschiffe/rsyslog-elasticsearch-kibana/master/doc/images/ipa-server-utilization.png" alt="IPA Server Utilization" height="110" />
-<img src="https://raw.githubusercontent.com/pschiffe/rsyslog-elasticsearch-kibana/master/doc/images/sssd.png" alt="SSSD" height="110" />
+Image contains several pre-configured dashboards for [freeIPA](http://www.freeipa.org/page/Main_Page) server ([User Logins](https://raw.githubusercontent.com/pschiffe/rsyslog-elasticsearch-kibana/master/doc/images/user-logins.png), [IPA Server Administration](https://raw.githubusercontent.com/pschiffe/rsyslog-elasticsearch-kibana/master/doc/images/ipa-server-administration.png), [IPA Server Health](https://raw.githubusercontent.com/pschiffe/rsyslog-elasticsearch-kibana/master/doc/images/ipa-server-health.png), [IPA Server Utilization](https://raw.githubusercontent.com/pschiffe/rsyslog-elasticsearch-kibana/master/doc/images/ipa-server-utilization.png), [SSSD](https://raw.githubusercontent.com/pschiffe/rsyslog-elasticsearch-kibana/master/doc/images/sssd.png))
 
 To get this image, pull it from [docker hub](https://registry.hub.docker.com/u/pschiffe/rsyslog-elasticsearch-kibana/):
 
