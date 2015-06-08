@@ -6,9 +6,9 @@ COPY elasticsearch/elasticsearch.repo /etc/yum.repos.d/elasticsearch.repo
 
 RUN rpm --import https://packages.elasticsearch.org/GPG-KEY-elasticsearch
 
-RUN yum -y upgrade \
-    && yum -y install epel-release \
-    && yum -y install \
+RUN yum -y --setopt=tsflags=nodocs upgrade \
+    && yum -y --setopt=tsflags=nodocs install epel-release \
+    && yum -y --setopt=tsflags=nodocs install \
         tar \
         supervisor \
         rsyslog \
@@ -16,7 +16,7 @@ RUN yum -y upgrade \
         rsyslog-elasticsearch \
         java-1.8.0-openjdk-headless \
         elasticsearch \
-    && yum -y clean all # Wed Apr 15 11:22:40 UTC 2015
+    && yum -y clean all # Mon Jun  8 18:11:27 UTC 2015
 
 RUN mkdir -p /opt/kibana \
     && curl -sSL https://download.elasticsearch.org/kibana/kibana/kibana-4.0.2-linux-x64.tar.gz \
