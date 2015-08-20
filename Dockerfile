@@ -19,7 +19,7 @@ RUN yum -y --setopt=tsflags=nodocs upgrade \
     && yum -y clean all # Mon Jun  8 18:11:27 UTC 2015
 
 RUN mkdir -p /opt/kibana \
-    && curl -sSL https://download.elasticsearch.org/kibana/kibana/kibana-4.0.2-linux-x64.tar.gz \
+    && curl -sSL https://download.elastic.co/kibana/kibana/kibana-4.1.1-linux-x64.tar.gz \
     | tar -xzC /opt/kibana --strip 1 \
     && chown -R root: /opt/kibana
 
